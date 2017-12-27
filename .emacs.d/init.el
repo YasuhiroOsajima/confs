@@ -1,10 +1,10 @@
 ;no create save files.
-(setq make-backup-files nil)
-(setq auto-save-default nil)
-;(setq backup-directory-alist
-;  `((".*" . ,temporary-file-directory)))
-;(setq auto-save-file-name-transforms
-;  `((".*" . ,temporary-file-directory t)))
+;(setq make-backup-files nil)
+;(setq auto-save-default nil)
+(setq backup-directory-alist
+  `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+  `((".*" ,temporary-file-directory t)))
 
 
 ;add conf dirs to load-path.
