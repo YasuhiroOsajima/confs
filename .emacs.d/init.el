@@ -53,7 +53,10 @@
 
 ;M-x package-install RET quickrun RET
 
-
+;M-x package-install RET multi-term RET
+;(when (require 'multi-term nil t)
+;  (setq multi-term-program "/bin/bash"))
+  ;M-x multi-term
 
 ;buffer view setting
 (menu-bar-mode 0)
