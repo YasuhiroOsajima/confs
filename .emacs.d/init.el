@@ -19,6 +19,8 @@
 
 (add-to-load-path "elisp" "conf" "public_repos")
 
+
+
 ;ELPA setting
 (require 'package)
 (add-to-list
@@ -30,25 +32,28 @@
 (package-initialize)
   ;M-x package-initialize
 
+
 ;theme from ELPA
 ;M-x package-install RET zenburn-theme RET
 ;(load-theme 'zenburn t)
 
 ;helm
 ;M-x package-install RET helm RET
-(require 'helm-config)
+;(require 'helm-config)
 
 ;M-x package-install RET auto-complete RET
-(when (require 'auto-complete-config nil t)
-  (define-key ac-mode-map (kbd "M-TAB") 'auto-complete)
-  (ac-config-default)
-  (setq ac-use-menu-map t)
-  (setq ac-ignore-case nil))
+;(when (require 'auto-complete-config nil t)
+;  (define-key ac-mode-map (kbd "M-TAB") 'auto-complete)
+;  (ac-config-default)
+;  (setq ac-use-menu-map t)
+;  (setq ac-ignore-case nil))
 
 ;M-x package-install RET flycheck RET
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;M-x package-install RET quickrun RET
+
+
 
 ;buffer view setting
 (menu-bar-mode 0)
