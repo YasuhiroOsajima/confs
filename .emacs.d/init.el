@@ -7,6 +7,10 @@
   `((".*" ,temporary-file-directory t)))
 
 
+;for clipbord pasting
+(electric-indent-mode 0)
+
+
 ;add conf dirs to load-path.
 (defun add-to-load-path (&rest paths)
   (let (path)
