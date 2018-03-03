@@ -64,12 +64,12 @@
 
 ;M-x package-install RET undo-tree RET
 ;(when (require 'undo-tree nil t)
-;  +  (define-key global-map (kbd "C-'") 'undo-tree-redo)
-;  +  (global-undo-tree-mode))
+;  (define-key global-map (kbd "C-'") 'undo-tree-redo)
+;  (global-undo-tree-mode))
 
 ;M-x package-install RET nav RET
 ;(when (require 'nav nil t)
-;  +  (global-set-key "\C-x\C-d" 'nav-toggle))
+;  (global-set-key "\C-x\C-d" 'nav-toggle))
   ;C-x C-d
 
 ;buffer view setting
@@ -98,9 +98,4 @@
 
 ;load user define conf files.
 (load "add-conf")
-
-
-
-
-
 
