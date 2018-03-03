@@ -62,6 +62,16 @@
 ;  (setq multi-term-program "/bin/bash"))
   ;M-x multi-term
 
+;M-x package-install RET undo-tree RET
+;(when (require 'undo-tree nil t)
+;  +  (define-key global-map (kbd "C-'") 'undo-tree-redo)
+;  +  (global-undo-tree-mode))
+
+;M-x package-install RET nav RET
+;(when (require 'nav nil t)
+;  +  (global-set-key "\C-x\C-d" 'nav-toggle))
+  ;C-x C-d
+
 ;buffer view setting
 (menu-bar-mode 0)
 (tool-bar-mode 0)
