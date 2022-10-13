@@ -2,19 +2,17 @@
 
 # ssh with logging
 
-FILENAME=`date +%Y%m%d%H%M`.log
+FILENAME=$(date +%Y%m%d%H%M).log
 LOGFILEPATH=~/logs/$FILENAME
 
 TARGETHOST=$1
-  # user@hostname
+# user@hostname
 SSHKEY=$2
-
 
 touch $LOGFILEPATH
 
 if [ $SSHKEY ]; then
-    script -fq -c "ssh $TARGETHOST -i $SSHKEY" $LOGFILEPATH
+  script -fq -c "ssh $TARGETHOST -i $SSHKEY" $LOGFILEPATH
 else
-    script -fq -c "ssh $TARGETHOST" $LOGFILEPATH
+  script -fq -c "ssh $TARGETHOST" $LOGFILEPATH
 fi
-
