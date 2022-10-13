@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ssh with logging
+
 FILENAME=`date +%Y%m%d%H%M`.log
 LOGFILEPATH=~/logs/$FILENAME
 
