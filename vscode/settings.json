@@ -1,21 +1,29 @@
 {
+  // General
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.enablePreview": false,
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
   "window.zoomLevel": 0,
+
   // Theme
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Darcula",
+
   // Editor
   "files.eol": "\n",
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.emptySelectionClipboard": false,
   "editor.fontSize": 12,
+  "editor.minimap.enabled": false,
+  "editor.suggestSelection": "first",
   "editor.tabSize": 4,
   "editor.wordWrap": "on",
-  "editor.minimap.enabled": false,
+  "workbench.editor.enablePreview": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.colorCustomizations": {
     "tab.activeBorder": "#00ff6a"
   },
+
   // Terminal
   "terminal.integrated.rendererType": "dom",
   "terminal.integrated.fontSize": 10,
@@ -23,41 +31,63 @@
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "terminal.integrated.shell.linux": "/bin/bash",
+
   // GO
+  "go.formatOnSave": true,
+  "go.gopath": "/root/go/1.19.2",
+  "go.goroot": "/root/.goenv/versions/1.19.2",
   "go.toolsEnvVars": {
     "GO111MODULE": "on"
   },
-  "go.gopath": "/root/go/1.19.2",
-  "go.goroot": "/root/.goenv/versions/1.19.2",
-  "go.formatOnSave": true,
+  "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
+
   // Python
   "python.jediEnabled": false,
   "python.pythonPath": "venv/bin/python",
   "python.linting.flake8Enabled": true,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+
+  // Other
+  "redhat.telemetry.enabled": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "yaml.customTags": ["!encrypted/pkcs1-oaep scalar", "!vault scalar"],
+  "files.associations": {
+    "*.j2": "jinja"
   },
-  "python.languageServer": "Default",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
+  "emmet.includeLanguages": { "jinja-html": "html" },
+
+  // Plugins
+  "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[json]": {
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
