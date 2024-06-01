@@ -1,3 +1,4 @@
 #!/bin/sh
-CONFDIR=`pwd`
-ln -s $CONFDIR/.tmux.conf ~/.tmux.conf
+dnf install tmux -y
+cp -f tmux.conf ~/.tmux.conf
+
