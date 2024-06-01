@@ -1,0 +1,1 @@
+dnf install -y java-latest-openjdk
