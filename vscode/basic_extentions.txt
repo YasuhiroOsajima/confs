@@ -1,0 +1,28 @@
+Basic
+- Code Spell Checker
+- Darcula Theme
+- IntelliCode
+- IntellCode API Usage Examples
+- Japanese Language Pack for Visual Studio Code
+- Material Icon Theme
+- Prettier
+- Vim
+
+Bash 
+- Bash IDE
+- shell-format
+- ShellCheck
+
+Python
+- Black Formatter
+- Pylance
+- Python
+- Python Debugger
+
+Java
+- Debugger for Java
+- ExtentionPack for Java
+- Language Support for Java by Read Hat
+- Maven for Java
+- Project Manager for Java
+- Test Runner for Java
