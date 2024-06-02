@@ -3,7 +3,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.enablePreview": false,
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
 
   // Theme
   "workbench.iconTheme": "material-icon-theme",
@@ -13,7 +13,7 @@
   "files.eol": "\n",
   "editor.copyWithSyntaxHighlighting": false,
   "editor.emptySelectionClipboard": false,
-  "editor.fontSize": 12,
+  "editor.fontSize": 16,
   "editor.minimap.enabled": false,
   "editor.suggestSelection": "first",
   "editor.tabSize": 4,
@@ -34,8 +34,8 @@
 
   // GO
   "go.formatOnSave": true,
-  "go.gopath": "/root/go/1.19.2",
-  "go.goroot": "/root/.goenv/versions/1.19.2",
+  "go.gopath": "/Users/yosajima/go/1.21.4",
+  "go.goroot": "/Users/yosajima/.goenv/versions/1.21.4",
   "go.toolsEnvVars": {
     "GO111MODULE": "on"
   },
@@ -48,6 +48,16 @@
   "python.linting.flake8Enabled": true,
 
   // Other
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["<C-r>"],
+      "commands": ["redo"]
+    }
+  ],
   "redhat.telemetry.enabled": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "yaml.customTags": ["!encrypted/pkcs1-oaep scalar", "!vault scalar"],
@@ -55,7 +65,6 @@
     "*.j2": "jinja"
   },
   "emmet.includeLanguages": { "jinja-html": "html" },
-
   // Plugins
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -89,5 +98,15 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.inlineSuggest.enabled": true,
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.insertFinalNewline": true,
+  "java.jdt.ls.java.home": "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.editor.enableAutoCompletions": true
 }
