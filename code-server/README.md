@@ -17,3 +17,7 @@ systemctl daemon-reload
 systemctl restart code-server@root.service
 systemctl status code-server@root.service
 ```
+
+```bash
+vim ~/.config/code-server/config.yaml
+```
